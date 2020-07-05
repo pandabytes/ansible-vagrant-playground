@@ -1,0 +1,14 @@
+---
+  - name: Playbook 1
+    hosts: linux
+    tasks:
+      - name: Ping hosts
+        ping:
+      - name: Update package
+        apt: 
+          update_cache: yes
+      - name: Remvoe Python
+        apt:
+          name: python
+          state: latest
+          update_cache: yes
