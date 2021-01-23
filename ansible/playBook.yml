@@ -7,7 +7,7 @@
       - name: Update package
         apt: 
           update_cache: yes
-      - name: Remvoe Python
+      - name: Get latest Python
         apt:
           name: python
           state: latest
